@@ -1,0 +1,5 @@
+SELECT us.name , li.nombreLi , li.autorLi , li.statusLi , pre.fechap , pre.fechad , pre.statusprestamo , pre.libro_id , pre.user_id
+FROM users us , libros li , prestamos pre 
+WHERE us.id = li.user_id
+AND pre.libro_id = li.id
+
